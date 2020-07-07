@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{9047D20F-2706-40F3-B45C-13694DC02536}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "UnitTest\UnitTest.vcxproj", "{8933848C-8AB3-41EE-B8B6-EFCADD54849B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9047D20F-2706-40F3-B45C-13694DC02536} = {9047D20F-2706-40F3-B45C-13694DC02536}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{8E8EF2DF-BBF2-442C-BD48-DDD1E5FE8A30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelExport", "ModelExport\ModelExport.vcxproj", "{DC290CA3-1061-4A1D-93A1-DDA750AAE9C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9047D20F-2706-40F3-B45C-13694DC02536} = {9047D20F-2706-40F3-B45C-13694DC02536}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deferred", "Deferred", "{8FC76BC7-E842-4476-AEA4-DBE9F5022502}"
+	ProjectSection(SolutionItems) = preProject
+		Shader\Deferred\000_CascadedShadow.fx = Shader\Deferred\000_CascadedShadow.fx
+		Shader\Deferred\000_Header.fx = Shader\Deferred\000_Header.fx
+		Shader\Deferred\000_Matrix.fx = Shader\Deferred\000_Matrix.fx
+		Shader\Deferred\000_ModelEdit.fx = Shader\Deferred\000_ModelEdit.fx
+		Shader\Deferred\000_States.fx = Shader\Deferred\000_States.fx
+		Shader\Deferred\000_Terrain.fx = Shader\Deferred\000_Terrain.fx
+		Shader\Deferred\027_DebugLine.fx = Shader\Deferred\027_DebugLine.fx
+		Shader\Deferred\30_Collider.fx = Shader\Deferred\30_Collider.fx
+		Shader\Deferred\CollisonCS.fx = Shader\Deferred\CollisonCS.fx
+		Shader\Deferred\common.fx = Shader\Deferred\common.fx
+		Shader\Deferred\DeferredPBRoptimizition2.fx = Shader\Deferred\DeferredPBRoptimizition2.fx
+		Shader\Deferred\pbrCommon.fx = Shader\Deferred\pbrCommon.fx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{0B5E8E97-7F36-47A6-92F9-505B7FB5064F}"
+	ProjectSection(SolutionItems) = preProject
+		Shader\Deferred\000_IslandStates.fx = Shader\Deferred\000_IslandStates.fx
+		Shader\Deferred\Island11.fx = Shader\Deferred\Island11.fx
+		Shader\Deferred\UpdateHeightCS.fx = Shader\Deferred\UpdateHeightCS.fx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partilce", "Partilce", "{1FA8DC99-BDE4-48B0-9C04-EEDD46B916DB}"
+	ProjectSection(SolutionItems) = preProject
+		Shader\Deferred\nBodyCS.fx = Shader\Deferred\nBodyCS.fx
+		Shader\Deferred\ParticleSystemInsertCS.fx = Shader\Deferred\ParticleSystemInsertCS.fx
+		Shader\Deferred\ParticleSystemRender.fx = Shader\Deferred\ParticleSystemRender.fx
+		Shader\Deferred\ParticleSystemUpdateCS.fx = Shader\Deferred\ParticleSystemUpdateCS.fx
+		Shader\Deferred\UpdateHeightCS.fx = Shader\Deferred\UpdateHeightCS.fx
+		Shader\Deferred\UpdateSkinTransforms.fx = Shader\Deferred\UpdateSkinTransforms.fx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostEffects", "PostEffects", "{A12F95C7-EA24-44B8-A1B5-AAE46B4EA312}"
+	ProjectSection(SolutionItems) = preProject
+		Shader\Deferred\PostDownScaleFX.hlsl = Shader\Deferred\PostDownScaleFX.hlsl
+		Shader\Deferred\PostEffect.hlsl = Shader\Deferred\PostEffect.hlsl
+		Shader\Deferred\SSAO.hlsl = Shader\Deferred\SSAO.hlsl
+		Shader\Deferred\SSLR.hlsl = Shader\Deferred\SSLR.hlsl
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9047D20F-2706-40F3-B45C-13694DC02536}.Debug|x86.ActiveCfg = Debug|Win32
+		{9047D20F-2706-40F3-B45C-13694DC02536}.Debug|x86.Build.0 = Debug|Win32
+		{9047D20F-2706-40F3-B45C-13694DC02536}.Release|x86.ActiveCfg = Release|Win32
+		{9047D20F-2706-40F3-B45C-13694DC02536}.Release|x86.Build.0 = Release|Win32
+		{8933848C-8AB3-41EE-B8B6-EFCADD54849B}.Debug|x86.ActiveCfg = Debug|Win32
+		{8933848C-8AB3-41EE-B8B6-EFCADD54849B}.Debug|x86.Build.0 = Debug|Win32
+		{8933848C-8AB3-41EE-B8B6-EFCADD54849B}.Release|x86.ActiveCfg = Release|Win32
+		{8933848C-8AB3-41EE-B8B6-EFCADD54849B}.Release|x86.Build.0 = Release|Win32
+		{DC290CA3-1061-4A1D-93A1-DDA750AAE9C1}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC290CA3-1061-4A1D-93A1-DDA750AAE9C1}.Debug|x86.Build.0 = Debug|Win32
+		{DC290CA3-1061-4A1D-93A1-DDA750AAE9C1}.Release|x86.ActiveCfg = Release|Win32
+		{DC290CA3-1061-4A1D-93A1-DDA750AAE9C1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FC76BC7-E842-4476-AEA4-DBE9F5022502} = {8E8EF2DF-BBF2-442C-BD48-DDD1E5FE8A30}
+		{0B5E8E97-7F36-47A6-92F9-505B7FB5064F} = {8E8EF2DF-BBF2-442C-BD48-DDD1E5FE8A30}
+		{1FA8DC99-BDE4-48B0-9C04-EEDD46B916DB} = {8E8EF2DF-BBF2-442C-BD48-DDD1E5FE8A30}
+		{A12F95C7-EA24-44B8-A1B5-AAE46B4EA312} = {8E8EF2DF-BBF2-442C-BD48-DDD1E5FE8A30}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28728184-18CC-41B0-8D96-401855CEB05F}
+	EndGlobalSection
+EndGlobal
